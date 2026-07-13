@@ -125,3 +125,49 @@
     width:100%;
 
 }
+/* ==========================
+   MOBILE NAVIGATION
+========================== */
+
+.menu-toggle{
+    display:none;
+    font-size:32px;
+    color:white;
+    cursor:pointer;
+}
+
+/* Tablet & Mobile */
+@media (max-width:768px){
+
+    .navbar{
+    padding:0 20px;
+}
+ .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+    position:absolute;
+    top:80px;
+    right:0;
+
+    width:100%;
+
+    background:#0f172a;
+
+    display:none;
+
+    flex-direction:column;
+    align-items:center;
+
+    gap:25px;
+
+    padding:30px 0;
+
+    z-index:999;
+}
+
+    .nav-links.nav-links-active{
+        display:flex;
+    }
+}

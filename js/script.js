@@ -18,3 +18,13 @@ const hiddenElements = document.querySelectorAll(
 );
 
 hiddenElements.forEach((el) => observer.observe(el));
+// =========================
+// MOBILE MENU
+// =========================
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("nav-links-active");
+});
